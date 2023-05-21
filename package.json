@@ -1,0 +1,23 @@
+{
+  "name": "jimp",
+  "version": "1.0.0",
+  "description": "nodejs, canvas, Jimp, Sharp, looksame, library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlockchainDeveloper009/generate_images.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlockchainDeveloper009/generate_images/issues"
+  },
+  "homepage": "https://github.com/BlockchainDeveloper009/generate_images#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jimp": "^0.22.8"
+  }
+}
