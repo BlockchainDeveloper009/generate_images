@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Map Reader</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.js"></script>
+</head>
+<body>
+  <canvas id="pdf-canvas"></canvas>
+
+  <script>
+    // Function to render the PDF page
+    function renderPage(page) {
+      var viewport = page.getViewport({ scale: 1 });
+      var canvas = document.getElementById("pdf-canvas");
+      var context = canvas.getContext("2d");
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      var renderContext = {
+        canvasContext: context,
+        viewport: viewport
+      };
+
+      page.render(renderContext);
+    }
+
+    // Function to load and render the PDF
+    function loadPDF(url) {
+      // Fetch the PDF document
+      PDFJS.getDocument(url).promise.then(function (pdf) {
+        // Get the first page
+        pdf.getPage(1).then(renderPage);
+      });
+    }
+
+    // Load the PDF file
+    loadPDF("https://prrd.bc.ca/wp-content/uploads/post/donnie-creek-tommy-lakes-evacuation-order-5/Donnie-Creek-EvacOrder5_Map.20230530.pdf");
+  </script>
+</body>
+</html>

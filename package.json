@@ -2,9 +2,13 @@
   "name": "jimp",
   "version": "1.0.0",
   "description": "nodejs, canvas, Jimp, Sharp, looksame, library",
-  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_contacts_server": "node ./api/contacts/contactsServer.js",
+    "nodemon_contactsapi_dev": "nodemon ./api/contacts/contactsServer.js",
+    "nodemon_defaultapi_dev": "nodemon ./api/server.js",
+    "nodemon_usersapi_dev": "nodemon ./api/usersApi/usersServer.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +21,22 @@
   },
   "homepage": "https://github.com/BlockchainDeveloper009/generate_images#readme",
   "dependencies": {
+    "@turf/turf": "^6.5.0",
     "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "esm": "^3.2.25",
     "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "jimp": "^0.22.8",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1",
+    "nodemon": "^3.0.1",
+    "pdf2json": "^3.0.4",
+    "pdfjs-dist": "^3.7.107",
     "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "bcrypt": "^5.1.0",
+    "crypto-js": "^4.1.1"
   }
 }

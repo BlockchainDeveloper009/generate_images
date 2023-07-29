@@ -183,4 +183,8 @@ They can help assess a candidate's understanding of the underlying technology, t
 [make-smartcontract-bugfree-create-testnetwork-buildbear-](https://medium.com/buildbear/use-buildbear-and-get-your-smart-contracts-de-bugged-5a9de3e2cf2c)
 [journey-of-smart-contracts-from-solidity-code-to-bytecodes/](https://www.zaryabs.com/journey-of-smart-contracts-from-solidity-code-to-bytecodes/)
 [Blockchain security course](https://www.youtube.com/watch?v=k8dy0HvbTic&list=PLgAorDu9_-dPGPkVWFceDNjlHyvvrx8Y0)
+[Buidig secure-contracts](https://github.com/crytic/building-secure-contracts/blob/master/program-analysis/echidna/introduction/installation.md)
+[ethereum-book-Ethereum-virtual-machine-book](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc)
+[QuillAudit_Auditor_Roadmap](https://github.com/Quillhash/QuillAudit_Auditor_Roadmap)
+
 */
